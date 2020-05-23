@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="3.1.4" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+    <PackageReference Include="xunit" Version="2.4.0" />
+    <PackageReference Include="Xunit.DependencyInjection" Version="6.1.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
+    <PackageReference Include="coverlet.collector" Version="1.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Prova.MedGrupo.Domain\Prova.MedGrupo.Domain.csproj" />
+    <ProjectReference Include="..\Prova.MedGrupo.Application\Prova.MedGrupo.Application.csproj" />
+    <ProjectReference Include="..\Prova.MedGrupo.Framework\Prova.MedGrupo.Framework.csproj" />
+    <ProjectReference Include="..\Prova.MedGrupo.Data\Prova.MedGrupo.Data.csproj" />
+    <ProjectReference Include="..\Prova.MedGrupo.Infra.IoC\Prova.MedGrupo.Infra.IoC.csproj" />
+    <ProjectReference Include="..\Prova.MedGrupo.Resources\Prova.MedGrupo.Resources.csproj" />
+  </ItemGroup>
+
+</Project>
